@@ -1,0 +1,20 @@
+.blog--card {
+    padding: 57px 27px;
+}
+
+.blog--card-article {
+    max-width: 300px;
+}
+
+.mat-mdc-card {
+    --mdc-elevated-card-container-color:white
+}
+
+mat-card-subtitle {
+    color: rgb(168, 165, 165);
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

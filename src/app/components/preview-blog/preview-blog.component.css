@@ -1,0 +1,44 @@
+.article--preview {
+    margin:0 auto;
+    text-align: left;
+    max-width: 800px;
+    padding:20px;
+    scroll-behavior: smooth;
+}
+
+ img {
+    width: 100%;
+    padding: 20px;
+}
+
+.article--title > h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 20px;
+}
+
+.article--description{
+    text-align: left;
+    float:left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.artcle--content ,h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.article--content {
+    text-align:justify;
+    font-size: 18px;
+    font-family: madefor-text-bold,helveticaneuew01-65medi,helveticaneuew02-65medi,helveticaneuew10-65medi,sans-serif;
+    line-height: 1.5;
+    color: rgba(0,0,0,1);
+    padding: 20px;
+}
+
