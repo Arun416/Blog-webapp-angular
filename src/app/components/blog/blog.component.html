@@ -1,6 +1,6 @@
 <h1 class="p-3 text-center fs-1 fw-1">My Blogs</h1>
 <div class="d-flex flex-wrap bd-highlight justify-content-center align-content-center">
-  <div class="p-2 mt-1 bd-highlight" *ngFor="let blog of blogsList?.blogs">
+  <div class="p-2 mt-1 bd-highlight" *ngFor="let blog of blogList?.blogs;trackBy:myTrackingfn">
     <mat-card class="blog--card-article" >
       <img mat-card-image [src]="blog.photo_url" alt="Photo of a Shiba Inu">
       <mat-card-header>
