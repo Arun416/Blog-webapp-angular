@@ -1,4 +1,12 @@
 <h1 class="p-3 text-center fs-1 fw-1">My Blogs</h1>
+<div *ngIf="loading">
+  <mat-progress-spinner
+  class="example-margin"
+  color="primary"
+  mode="indeterminate"
+  >
+</mat-progress-spinner>
+</div>
 <div class="d-flex flex-wrap bd-highlight justify-content-center align-content-center">
   <div class="p-2 mt-1 bd-highlight" *ngFor="let blog of blogList?.blogs;trackBy:myTrackingfn">
     <mat-card class="blog--card-article" >

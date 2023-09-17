@@ -13,7 +13,7 @@ import { EditBlogComponent } from './components/edit-blog/edit-blog.component';
 import { PreviewBlogComponent } from './components/preview-blog/preview-blog.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -32,6 +32,7 @@ import { HttpClientModule} from '@angular/common/http';
     MatCardModule,
     AppRoutingModule,
     HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

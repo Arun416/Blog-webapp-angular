@@ -21,7 +21,6 @@ export class PreviewBlogComponent implements OnInit {
 
   fetchBlog(){
       let id = this.routes.snapshot.params['id']
-      console.log(id,"hi");
       this.blogService.getSingleBlog(id).subscribe((res:any)=> this.blog = res.blog)
   }
 }

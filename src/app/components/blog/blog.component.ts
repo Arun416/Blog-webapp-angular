@@ -12,14 +12,18 @@ export class BlogComponent implements OnInit, OnDestroy {
   // blogs: any[] = [1, 2, 3, 4, 5, 6];
   private blogSubscription!: Subscription;
   public blogList: any;
+  public loading: boolean = false;
+
   constructor(
     private blogService: BlogService,
     private router: Router,
   ) {}
   ngOnInit(): void {
-    this.blogSubscription = this.blogService
-      .getBlogs()
-      .subscribe((resp) => (this.blogList = resp));
+    this.loading = true;
+    this.blogSubscription = this.blogService.getBlogs().subscribe((resp) => {
+      this.loading = false;
+      this.blogList = resp;
+    });
   }
 
   ngOnDestroy(): void {
